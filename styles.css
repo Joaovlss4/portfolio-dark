@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+body{
+    transition: background 0.2s linear;
+}
+body.dark{
+    background: #232c35;
+    color: white;
+}
+header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 125px;
+    padding: 0 120px;
+    transition: background 0.2s linear;
+}
+header.dark{
+    background: #232c35;
+    color: white;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.nav-bar a{
+    text-decoration: none;
+}
+li{
+    padding: 0 40px;
+    color: #111;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+li.dark{
+    color: #fff;
+    z-index: 3;
+}
+.head-padding{
+    padding-left: 0;
+}
+.active{
+    color: #DE0F66;
+}
+.active.dark{
+    color: #DE0F66;
+}
+.logo a img{
+    width: 64px;
+}
+.body{
+    padding: 96px 0 120px 0;
+}
+.body-in{
+    display: flex;
+    padding: 0 120px;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.text{
+    padding-right: 120px;
+}
+.body-in span{
+    color: #DE0F66;
+}
+.body-in-text2{
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+img{
+    width: 312px;
+}
+.dark-theme{
+    padding-left: 30px;
+}
+.label{
+    background-color: #232c35;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 60px;
+    transition: 0.2s linear;
+}
+.fa-solid{
+    color: white;
+    padding: 6px;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 33px;
+    width: 33px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(34px);
+    background: #232c35;
+}
+.checkbox:checked + .label{
+    background: #fff;
+}
+.fa-cloud-showers-heavy{
+    color: #232c35;
+}
+.fa-cloud-sun{
+    color: #fff;
+}
