@@ -16,7 +16,7 @@ header{
     background: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     height: 125px;
     padding: 0 120px;
     transition: background 0.2s linear;
@@ -24,6 +24,10 @@ header{
 header.dark{
     background: #232c35;
     color: white;
+}
+.nav{
+    display: flex;
+    align-items: center;
 }
 .nav-bar{
     display: flex;
@@ -40,10 +44,17 @@ li{
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    transition: 0.3s linear;
+}
+li:hover{
+    color: #DE0F66;
 }
 li.dark{
     color: #fff;
     z-index: 3;
+}
+li.dark:hover{
+    color: #DE0F66;
 }
 .head-padding{
     padding-left: 0;
@@ -80,6 +91,16 @@ li.dark{
 }
 img{
     width: 312px;
+}
+#bars{
+    display: none;
+    color: #111;
+    font-size: 36px;
+}
+#checkbox-bars{
+    position: relative;
+    left: 27px;
+    display: none;
 }
 .dark-theme{
     padding-left: 30px;
@@ -128,4 +149,66 @@ img{
 }
 .fa-cloud-sun{
     color: #fff;
+}
+@media (max-width: 428px){
+    header{
+        display: flex;
+        width: 100%;
+        padding: 0 60px;
+    }
+    .nav-bar{
+        left: 0;
+        line-height: 50px;
+        position: absolute;
+        display: block;
+        top: 120px;
+        width: 100%;
+        height: 75vh;
+        padding: 0 60px;
+        text-align: center;
+        background-color: #232c35;
+        opacity: 0;
+    }
+    li{
+        padding: 30px 0 30px 0;
+        display: block;
+        font-size: 28px;
+        color: #fff;
+    }
+    .body{
+        padding: 0;
+    }
+    #bars{
+        display: flex;
+        cursor: pointer;
+        padding: 0 0 0 30px;
+    }
+    #checkbox-bars{
+        display: flex;
+        opacity: 0;
+    }
+    .toggle{
+        opacity: 1;
+    }
+    .disable{
+        display: none;
+    }
+    .body-in{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 60px 60px;
+        width: 100%;
+    }
+    .body-in img{
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        padding: 0 0 30px 0;
+        font-size: 35px;        
+    }
+    .active{
+        color: #fff;
+    }
 }

@@ -6,7 +6,7 @@ let navBar3 = document.getElementById('nav-list3')
 let navBar4 = document.getElementById('nav-list4')
 
 checkbox.addEventListener('change', ()=> {
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle('dark')
     head.classList.toggle('dark')
     navBar.classList.toggle('dark')
     navBar2.classList.toggle('dark')
@@ -14,4 +14,10 @@ checkbox.addEventListener('change', ()=> {
     navBar4.classList.toggle('dark')
 })
 
-console.log(navBar)
+let bars = document.getElementById('bars')
+let navBarAll = document.getElementById('nav-bar')
+
+bars.addEventListener('click', ()=> {
+    navBarAll.classList.toggle('toggle')
+    navBarAll.classList.toggle('disable')
+})
