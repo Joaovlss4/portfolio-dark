@@ -4,6 +4,9 @@ let navBar = document.getElementById('nav-list1')
 let navBar2 = document.getElementById('nav-list2')
 let navBar3 = document.getElementById('nav-list3')
 let navBar4 = document.getElementById('nav-list4')
+let line = document.getElementById('line')
+let redes = document.getElementsByClassName('redes')
+console.log(redes)
 
 checkbox.addEventListener('change', ()=> {
     document.body.classList.toggle('dark')
@@ -12,6 +15,8 @@ checkbox.addEventListener('change', ()=> {
     navBar2.classList.toggle('dark')
     navBar3.classList.toggle('dark')
     navBar4.classList.toggle('dark')
+    line.classList.toggle('dark')
+    for(let i = 0; i < redes.length; i++) {redes.item(i+1).classList.toggle('dark')}
 })
 
 let bars = document.getElementById('bars')
